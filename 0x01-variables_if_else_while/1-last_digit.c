@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 /**
- * main - checks if a the lastDigit of a number is greater than 5, less than 6 and not zero or is 0
+ * main - checks lastDigit of a number is > 5, < 6 and != zero or is 0
  * Return: Always 0
  */
 int main(void)
 {
 	int n;
-	int lastDigit; 
+	int lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -23,7 +23,7 @@ int main(void)
 		printf("Last digit of %d is %d and is greater than 5 \n", n, lastDigit);
 	} else if (lastDigit < 6 && lastDigit != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and is not 0 \n", n, lastDigit);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
 	}
 
 return (0);
