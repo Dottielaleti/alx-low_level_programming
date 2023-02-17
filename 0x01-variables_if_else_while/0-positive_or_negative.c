@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /* more headers goes there */
+#include <stdio.h>
 
 /* betty style doc for function main goes there */
+/*
+ * is_positive_or_negative - checks if a number is positive or negative
+ * @n: the number to check
+ */
 int main(void)
 {
 	int n;
