@@ -16,18 +16,15 @@ int main(void)
 		{
 			for (num3 = 0; num3 < 10; num3++)
 			{
-				if ((num1 != num2 != num3) && num1 != num2 && num2 != num3)
+				if (num1 != num2 && num2 != num3)
 				{
-					if (num1 < num2 < num3 && num1 < num2 && num2 < num3)
+					if (num1 < num2 && num2 < num3)
 					{
-						if (num1 < 7 && num2 < 9 && num3 < 10)
-						{
-							putchar(',');
-							putchar(' ');
-						}
 						putchar(num1 + '0');
 						putchar(num2 + '0');
 						putchar(num3 + '0');
+						putchar(',');
+						putchar(' ');
 					}
 				}
 
