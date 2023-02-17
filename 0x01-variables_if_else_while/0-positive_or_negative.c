@@ -1,9 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /*
  * main - checks if a number is positive, number or 0
  * Return: Always 0
