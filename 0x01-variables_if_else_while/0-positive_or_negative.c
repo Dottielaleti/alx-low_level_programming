@@ -5,8 +5,8 @@
 
 /* betty style doc for function main goes there */
 /*
- * is_positive_or_negative - checks if a number is positive or negative
- * @n: the number to check
+ * main - checks if a number is positive, number or 0
+ * Return: Always 0
  */
 int main(void)
 {
