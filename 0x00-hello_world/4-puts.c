@@ -1,4 +1,4 @@
-##include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - A program that prints a line with puts functions
@@ -8,10 +8,12 @@
 int main(void)
 {
 
-	{puts("Programming is like building a multilingual puzzle"):
+	{
+		putchar("Programming is like building a multilingual puzzle");
 	}
+	
 
-	int("\n")
+	putchar("\n");
 	
 	return (0);
 }
