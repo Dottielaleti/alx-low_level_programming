@@ -8,6 +8,8 @@
 
 int main(void)
 {
-	printf("With proper grammar, but the outcome is place of art, \n*)
-        return (0);
+	printf("With proper grammar, but the outcome is place of art")
+        
+	printf("\n")
+	return (0);
 }
