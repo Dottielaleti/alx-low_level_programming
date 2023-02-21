@@ -7,13 +7,13 @@
  */
 int main (void)
 {
-	char = 'ch';
-	int times = 't';
+	char = 'ch'
+	int times = 't'
 
-	while (t <= 10);
+	while (t <= 10)
 	{
 		ch= 'a'
-		while (ch <= 'z');
+		while (ch <= 'z')
 		{
 			_putcher (ch);
 			ch++;
