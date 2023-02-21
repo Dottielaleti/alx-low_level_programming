@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * more - program that prints the first 50 Fibonacci numbers
  *
@@ -6,16 +7,19 @@
  */
 main int(void)
 {
-	long pri = 1, sec = 2, sum;
-	printf ("1 , 2")
-	while (sum < 20365011073)
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	for(count = 0; count < 50; count++)
 	{
-		sum = pri + secs;
-		printf(", %lu" , sum);
-		pri = sec;
-		sec = sum;
+		sum fib1 + fib2;
+		printf("%lu", sum);
 
+		fib1 = fib2;
+		fib2 = sum;
+		if( count == 49)
+			pfintf("\n");
+		else
+			printf(', );
 	}
-	printf("\n");
 	return (0);
 }
