@@ -2,8 +2,8 @@
 
 /**
  * int add - Function that adds two integers and returns the result.
- * @x: The first integer to be added.
- * @y: The second integer to be added.
+ * @num1: The first integer to be added.
+ * @num2: The second integer to be added.
  *
  * Return: Results of addition.
  */
