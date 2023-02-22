@@ -5,12 +5,12 @@
  *
  * Return: last digit
  */
-int print_lastdigit(int)
+int print_lastdigit(int n)
 {
         int lastdigit = - (n % 10);
         if (n < 0 )
         {
-                putchar (lasdigit + '0')
+                _putchar (lastdigit + '0');
                         return (lastdigit);
         }
 }
