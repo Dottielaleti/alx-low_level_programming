@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * main - prints 10 times the alphabet, in lowercase
+ * void print_alphabet_x10 - prints 10 times the alphabet, in lowercase
  *
  * Return: Always 0
  */
-int main (void)
+void print_alphabet_x10(void)
 {
 	char = 'ch'
 	int times = 't'
 
 	while (t <= 10)
 	{
-		ch= 'a'
+		ch = 'a'
 		while (ch <= 'z')
 		{
 			_putcher (ch);
