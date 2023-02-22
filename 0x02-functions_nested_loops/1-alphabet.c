@@ -5,16 +5,14 @@
  *
  * Return: Always 0
  */
-void ptint_alphabet(void)
+void print_alphabet(void)
 {
-	int ch;
+	char = 'a'
 
-	ch = 'a'
-
-	while (ch <= 'z')
+	 for('a' <= 'z')
 	{
-		_putchar(ch);
-		ch++;
+		_putchar(a);
+		a++;
 	}
 	_putchar('\n');
 	
