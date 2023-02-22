@@ -5,13 +5,13 @@
  *
  * Return: Always 0
  */
-int main (void)
+void ptint_alphabet(void)
 {
 	int ch;
 
 	ch = 'a'
 
-	while (ch<='z')
+	while (ch <= 'z')
 	{
 		_putchar(ch);
 		ch++;
