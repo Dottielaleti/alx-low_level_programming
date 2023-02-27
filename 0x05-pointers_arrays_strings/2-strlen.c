@@ -7,11 +7,9 @@
  */
 int _strlen(char *s)
 {
-	char *s;
-	int len;
+	length = 0;
 
-	*s = "My first strlen!";
-	len = _strlen(*s);
-	printf("%d\n", len);
-	return (len);
+	while (*str++)
+	length++;
+	return (length);
 }
