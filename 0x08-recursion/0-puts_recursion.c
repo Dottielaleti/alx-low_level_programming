@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion - prints a string followed by a new line
- * @*s: string to be printed
+ * @s: string
  *
  * Return: 0
  */
@@ -18,4 +18,4 @@ else
 	_putchar('\n');
 }
 
-}	
+}
