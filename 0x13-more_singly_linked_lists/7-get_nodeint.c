@@ -12,7 +12,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	if (head == NULL)
 		return (NULL);
-	for (q = 0, q < index; q++)
+	for (q = 0; q < index; q++)
 	{
 		head = head->next;
 		if (head == NULL)
