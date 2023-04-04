@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * void free_listint - function that frees a listint_t list
- * @head: head list
- * Return: 0
+ * free_listint - frees a listint_t list
+ * @head: head of the list
+ * Return: NULL if error
  */
 void free_listint(listint_t *head)
 {
@@ -12,7 +12,7 @@ void free_listint(listint_t *head)
 
 	while (head != NULL)
 	{
-		next= head-> next;
+		next = head->next;
 		free(head);
 		head = next;
 	}
