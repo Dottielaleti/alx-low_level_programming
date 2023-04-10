@@ -9,28 +9,29 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t op, rd, wr;
-	char *buf;
+	int file, r, w;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
-	buf = malloc(sizeof(char) * letters);
-	if (buf == NULL)
+	file = open(filename, O_RDONLY);
+	if (file == -1)
+		return (0);
+	buffer = malloc(sizeof(char) * letters + 1);
+	if (buffer == NULL)
+		return (0);
+	r = read(file, buffer, letters);
+	if (r == -1)
 		return (0);
 
-	op = open(filename, O_RDONLY);
-	rd = read(op, buf, letters);
-	wr = write(STDOUT_FILENO, buf, rd);
+	buffer[letters] = '\0';
 
-	if (op == -1 || rd == -1 || wr == -1 || wr != rd)
-	{
-		free(buf);
+	w = write(STDOUT_FILENO, buffer, r);
+	if (w == -1)
 		return (0);
-	}
 
-	free(buf);
-	close(op);
-
-	return (wr);
+	close(file);
+	free(buffer);
+	return (w);
 }
