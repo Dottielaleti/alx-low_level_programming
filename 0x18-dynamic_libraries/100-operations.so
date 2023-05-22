@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -Wall -Werror -Wextra -pedantic -fPIC -shared 100-operations.c -o 100-operations.so
+
